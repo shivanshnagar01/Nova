@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="NIKE COURT LEGACY.png" type="image/x-icon">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <div class="notification">Product Added !</div>
+    <div class="top">
+        <div class="arrow">&leftarrow;</div>
+        <div class="logo">PRODUCTS</div>
+        <button class="filter">&#9776;</button>
+        <div class="left">
+            <button class="close">X</button>
+            <input type="text" placeholder="Discover Your Next Favourite Fit" id="search" class="search">
+            <svg class="sicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+
+        </div>
+        <div class="right">
+            <div class="Sort">Sort By &downarrow;</div>
+        </div>
+        <div class="cart-cont">
+            <span class="cart">&#128722; <div class="cart-num"></div></span>
+            <span class="cartname">Cart</span>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="cont-left dcont">
+            <div class="list">All</div>
+            <div class="list">Sneakers</div>
+            <div class="list">Hoodies</div>
+            <div class="list">Jackets</div>
+            <div class="list">Fits</div>
+            <div class="list">Tees</div>
+            <div class="list">Pants</div>
+            <div class="nova">NOVA</div>
+        </div>
+        <div class="cont-right dcont">
+            <div class="head">
+                <span class="heading">Results of your search </span>
+                <span class="num"></span>
+            </div>
+            <div class="main">
+                <!-- <div class="item">
+                    <div class="plus">Add</div>
+                    <div class="img-box"><img src="NIKE COURT LEGACY.png" alt="" class="slimg"></div>
+                    <div class="content">
+                        <div class="price">₹6,999</div>
+                        <div class="name">Nike Court Legacy</div>
+                        <div class="type">Premium Streetwear</div>
+                        <div class="rating">&starf; &starf; &starf; &starf; &star; &emsp;4/5</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Cart-body">
+        <div class="carttop">
+            <div class="cartheading">Cart</div>
+            <div class="closebtn">X</div>
+        </div>
+        <div class="cartbottom">
+        </div>
+        <div class="paybtn">Checkout &rarr;</div>
+    </div>
+
+
+    <script src="product.js"></script>
+</body>
+
+</html>

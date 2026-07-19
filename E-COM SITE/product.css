@@ -1,0 +1,500 @@
+*{
+ font-family: 'OutFit';
+ margin: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.arrow{
+    scale: 2;
+    position: absolute;
+    left: 100px;
+}
+
+.notification{
+    position: fixed; 
+   padding: 20px 0px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    z-index: 10;
+    opacity: 0;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0px 0px 20px grey;
+    scale: 0.9;
+    /* animation: shake 1s ease-in-out infinite alternate; */
+    transition: 0.3s;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+
+.top{
+    height: 60px;
+    /* border: 2px solid red; */
+    border-bottom: 2px solid rgb(168, 168, 168);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-self: center;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(127, 127, 127);
+    width: 300px;
+    transition: 0.3s;
+}
+
+input:focus{
+    transition: 0.3s;
+    outline: none;
+    font-size: 15px;
+}
+
+.left{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 10px 10px ;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.filter{
+    background-color: rgb(225, 225, 225);
+    height: 40px;
+    width: 40px;
+    margin-left: 5%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.filter:hover{
+    transition: 0.3s;
+    background-color: rgb(188, 188, 188);
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 15%;
+}
+
+
+.Sort{
+    padding: 10px 20px;
+    cursor: pointer;
+   background-color: rgb(225, 225, 225);
+   border-radius: 20px;
+   font-size: 16px;
+   opacity: 1;
+   transition: 0.3s;
+}
+
+.Sort:hover{
+    transition: 0.3s;
+    background-color: rgb(188, 188, 188);
+}
+
+.sicon{
+    align-self: center;
+}
+
+.right{
+    margin-left: 5%;
+}
+
+.dcont{
+    /* border: 2px solid red; */
+    display: inline-block;
+    height: 90vh;
+}
+
+.l2{
+    margin-left: 5%;
+}
+
+.cont{
+    /* border: 2px solid red; */
+    display: flex;
+    
+}
+
+.cont-left{
+    height: 87vh;
+    font-size: 20px;
+    width: 20%;
+    /* padding-left: 20px; */
+    padding-top: 20px;
+    background-color: rgb(232, 232, 232);
+    position: relative;
+    border-right: 2px solid grey;
+}
+
+.list{
+    margin: 10px -80px ;
+    background-color: rgb(241, 241, 241);
+    width: 350px;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.list:hover{
+    transition: 0.2s;
+    background-color: white;
+    scale: 1.05;
+}
+
+.cont-right{
+    width: 80%;
+    overflow-y: scroll;
+}
+
+.nova{
+    color: grey;
+    justify-self: center;
+    font-size: 40px;
+    margin-top: 25%;
+    font-weight: 500;
+}
+
+.head{
+    justify-self: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.main{
+    /* border: 2px solid red; */
+    padding: 20px;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    justify-items: center;
+    row-gap: 50px;
+    overflow-y: scroll;
+
+}
+
+.item{
+    height: 300px;
+    width: 170px ;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(173, 173, 173);
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s;
+}
+
+.item:hover{
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.726);
+    scale: 1.03;
+}
+
+.img-box{
+      background-color: rgb(187, 187, 187);
+    width: 100%;
+    height: 170px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    scale: 0.8;
+    object-fit: contain;
+}
+
+.content{
+    margin-left: 10px;
+}
+
+.content div{
+    margin-top: 10px;
+}
+
+.content .rating{
+    margin-top: 3px;
+}
+
+.price{
+font-weight: 700;
+font-size: 18px;
+}
+
+.name{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.content .type{
+    border-top: 2px solid grey;
+    padding-top: 8px;
+    font-size: 12px;
+    color: grey;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.plus{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px ;
+    border-radius:5px;
+    right: 10px;
+    top: 60%;
+    cursor: pointer;
+}
+
+.item{
+    animation: showCard 0.7s ease;
+}
+
+.head{
+    animation: showCard 0.7s ease ;
+}
+
+@keyframes showCard{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.num{
+    position: absolute;
+    right: 20px;
+}
+
+.num{
+        animation: showCard 7s ease ;
+}
+
+.cart-cont{
+    position: absolute;
+    right: 5%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart{
+    /* position: absolute; */
+    /* right: 7%; */
+    padding: 7px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cartname{
+    /* position: absolute; */
+    /* right: 4%; */
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.cart-cont .cartname:hover{
+    transition: 0.3s;
+    scale: 1.05;
+}
+
+.cart-num{
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 700;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    background-color: red;
+    transition: none;
+    left: 20px;
+    bottom: -5px;
+}
+
+.Cart-body{
+    height: 100vh;
+    width: 28%;
+    background-color: aliceblue;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.carttop{
+    height: 10%;
+    /* border: 2px solid black; */
+    width: 90%;
+    justify-self: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+    gap: 270px;
+}
+
+.closebtn{
+    background-color: rgb(255, 44, 44);
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+    position: relative;
+    
+}
+
+.cartheading{
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 2px;
+    font-weight: 600;
+}
+
+.cartbottom{
+    justify-self: center;
+    border-radius: 20px;
+    background-color: rgb(202, 222, 240);
+    /* border: 2px solid black; */
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 10px;
+    row-gap: -10px;
+    overflow-y: scroll;
+    
+}
+
+.cartbottom .item{
+    scale: 0.9;
+    box-shadow: none;
+    margin-left: 10px;
+}
+.cartbottom *{
+    transition: 0.3s;
+}
+
+.Cart-body{
+  transform: translateX(100%);
+  overflow-y: hidden;
+  transition: 0.3s;
+}
+
+.Cart-body.active{
+    transition: 0.3s;
+    transform: translateX(0%);
+}
+
+.paybtn{
+    position: fixed;
+    bottom: 0px;
+    justify-self: center;
+    background-color: black;
+    padding: 15px 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0);
+    transition: 0.3s;
+}
+
+.paybtn:hover{
+    transition: 0.3s;
+    scale: 1.05;
+    box-shadow: 0px 0px 20px grey;
+}
+
+.activebtn{
+    opacity: 1;
+    bottom: 10px;
+}
+
+   .cartbottom{
+    padding-bottom: 150px;
+}
+
+.crossbutton{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: white;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.2s;
+}
+
+.crossbutton:hover{
+    transition: 0.2s;
+    scale: 1.1;
+    background-color: rgb(221, 30, 30);
+}
