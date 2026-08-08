@@ -13,6 +13,404 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="NIKE COURT LEGACY.png" type="image/x-icon">
+    <style>
+        @media (max-width:780px) {
+            body {
+                overflow-x: hidden;
+
+            }
+
+            .main-cont {
+                overflow-x: hidden;
+            }
+
+            .left {
+                margin-left: 0;
+            }
+
+            .menu {
+                width: max-content;
+                font-size: 14px;
+            }
+
+            .lname {
+                font-size: 30px;
+            }
+
+            input {
+                width: 150px;
+            }
+
+            .input {
+                gap: 20px;
+            }
+
+            .dropdown {
+                width: fit-content;
+            }
+
+            .left-he {
+                scale: 0.7;
+                top: -5%;
+                left: -15%;
+                padding: 10px;
+            }
+
+            .shop {
+                font-size: 25px;
+            }
+
+            .glow {
+                scale: 0.6;
+                position: absolute;
+                margin-top: 25%;
+            }
+
+            .jacket {
+                position: relative;
+                scale: 0.4;
+                margin-left: 38vw;
+                margin-top: 17%;
+            }
+
+            .i1 {
+                scale: 0.7;
+                top: 37%;
+                transform: rotateZ(30deg);
+                right: 7%;
+                background-color: white;
+                width: 150px;
+
+            }
+
+            .sneak {
+                display: none;
+            }
+
+            .drop,
+            .disc {
+                display: none;
+            }
+
+            .ach-sec {
+                gap: 7vw;
+            }
+
+            .ach {
+                scale: 0.8;
+            }
+
+            .gtext {
+                font-size: 20px;
+                width: max-content;
+            }
+
+            .item {
+                overflow: visible;
+                display: flex;
+
+                background-color: white;
+                display: inline-block;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.627);
+                transition: 0.3s;
+            }
+
+            .num {
+                font-size: 80px;
+            }
+
+            .lefttxt,
+            .side-txt {
+                display: none;
+            }
+
+            .num1 {
+                margin-top: 2%;
+            }
+
+            .story {
+                width: 70%;
+            }
+
+            .byline {
+                margin-top: 5%;
+            }
+
+            .page3 {
+                padding-bottom: 20%;
+            }
+
+            .card {
+                color: black;
+            }
+
+            /* 
+            .c1 {
+                box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.308);
+            }
+
+            .c2 {
+                box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.244);
+            }
+
+            .c3 {
+                box-shadow: 0px 0px 20px rgba(0, 242, 255, 0.244);
+            }
+
+            .c4 {
+                box-shadow: 0px 0px 20px rgba(255, 0, 208, 0.244);
+            } */
+
+            .num2 {
+                margin-top: 1%;
+            }
+
+            .card-sec {
+                scale: 0.75;
+                column-gap: 40px;
+                row-gap: 30px;
+            }
+
+            .review {
+                scale: 0.9;
+            }
+
+            .ht {
+                width: 67%;
+                text-align: center;
+                line-height: 55px;
+            }
+
+            .stars {
+                color: #D4A017;
+                font-size: 18px;
+                width: 15vw;
+                margin-left: 0;
+            }
+
+            .review-sec {
+                width: auto;
+                justify-items: center;
+                row-gap: 20px;
+            }
+
+            .content {
+                font-size: 16px;
+            }
+
+            .with {
+                position: absolute;
+                margin-top: 5%;
+                margin-left: 2%;
+                font-size: 30px;
+                /* width: 40px; */
+                font-weight: 700;
+            }
+
+            .email {
+                position: absolute;
+                top: 15%;
+                letter-spacing: -0.5px;
+                font-size: 15px;
+                font-weight: 300;
+                color: rgb(179, 179, 179);
+                right: 3%;
+                height: max-content;
+            }
+
+            .f-t {
+                font-size: 110px;
+                font-weight: 700;
+                font-family: 'Poppins';
+                justify-self: center;
+                letter-spacing: 0px;
+                margin-top: 58%;
+            }
+
+            .fdown {
+                gap: 0px;
+                margin-top: 10px;
+            }
+
+        }
+
+        @media (max-width:431px) {
+
+            .i1,
+            .jacket,
+            .glow {
+                display: none;
+            }
+
+.lo1{
+    animation:gliding 2s ease-in-out infinite alternate-reverse, direction 4s ease-in infinite reverse;
+}
+
+            .top:last-child {
+                display: none;
+            }
+
+            .top .right {
+                display: none;
+            }
+
+            .input {
+                display: none;
+            }
+
+            .left-he {
+                top: -60px;
+            }
+
+            .lo1 {
+                scale: 0.8;
+            }
+
+            .dropdown {
+                display: none;
+            }
+
+            .left {
+                gap: 200px;
+                justify-self: center;
+                align-items: center;
+                margin-left: 20px;
+            }
+
+            .ach-sec {
+                flex-direction: column;
+            }
+
+            .gtext {
+                font-size: 14px;
+                scale: 0.8;
+            }
+
+            .item {
+                scale: 0.9;
+            }
+
+            .item .rating {
+                display: none;
+            }
+
+            .slider-wrapper {
+                height: max-content;
+            }
+
+            .swiper2 {
+                margin-top: 0;
+            }
+
+            .story {
+                width: 80%;
+                font-size: 16px;
+            }
+
+            .num,
+            .AHL {
+                scale: 0.7;
+            }
+
+            .byline {
+                margin-top: 0;
+                scale: 0.8;
+            }
+
+            .why-head {
+                font-size: 40px;
+                /* margin-left: 15%; */
+                margin-top: 4%;
+            }
+
+            .num2 {
+                margin-left: 0;
+                display: none;
+            }
+
+
+            .card-sec {
+                scale: 0.8;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                margin-top: -10%;
+                padding-bottom: 0;
+            }
+
+            .review-sec {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 20%;
+                justify-self: center;
+                justify-items: center;
+                margin-left: 20px;
+            }
+
+            .stars {
+                width: auto;
+            }
+
+            .quote {
+                display: none;
+            }
+
+            .r4,
+            .r5,
+            .r6 {
+                display: none;
+            }
+
+            .ht {
+                scale: 0.9;
+                margin-top: 0;
+
+            }
+
+            .byline,
+            .N {
+                color: #454545;
+            }
+
+
+            .num {
+                margin-left: 0;
+                top: -5px;
+                scale: 0.6;
+            }
+
+            .with{
+                font-size: 30px;
+            }
+
+
+            .email{
+                scale: 0.8;
+                top:20%;
+            right: 0;
+            }
+
+            .f-t{
+                font-size: 110px;
+                width: 100vw;
+                overflow-x: scroll;
+                position: relative;
+                line-break: anywhere;
+                line-height: 90px;
+                text-align: center;
+                margin-top: 93%;
+            }
+
+.hrl{
+    margin-top: 10px;
+}
+
+            .fdown{
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -40,7 +438,7 @@
                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                 </svg>
                 <svg class="icon movebtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" >
+                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
 
                     <path d="M6 8h12l-1 12H7L6 8z" />
                     <path d="M9 8V6a3 3 0 0 1 6 0v2" />
@@ -55,7 +453,7 @@
         </div>
         <div class="cont">
             <div class="hero">
-                <div class="item i1">
+                <div class="i1 item">
                     <img src="jacket.png" alt="">
                     <div class="name">Premium Vegan Leather Limited FW'26 Collection</div>
                     <div class="price">₹3,999</div>
@@ -272,7 +670,7 @@
         <div class="page3 page">
             <img src="quotation.png" alt="" class="quote q1">
             <img src="quotation.png" alt="" class="quote q2">
-            <div class="num">01</div>
+            <div class="num num1">01</div>
             <!-- <div class="big">WHO ARE WE?</div> -->
             <div class="AHL">About Us</div>
             <div class="story">We are a team of fashion enthusiasts who believe that great style should be a part of
@@ -322,10 +720,10 @@
 
         </div>
         <div class="page5 page">
-            <div class="num">03</div>
+            <div class="num num3">03</div>
             <div class="why-head ht">Stories Behind The Style</div>
             <div class="review-sec">
-                <div class="review">
+                <div class="review r1">
                     <div class="rf">
                         <div class="rname">&HorizontalLine; Robbin.N</div>
                         <div class="stars">&starf; &starf; &starf; &starf; &starf;</div>
@@ -335,7 +733,7 @@
                         better in person. Definitely one of those purchases where you feel like you got more than what
                         you paid for.</div>
                 </div>
-                <div class="review">
+                <div class="review r2">
                     <div class="rf">
                         <div class="rname">&HorizontalLine; Shivam.T</div>
                         <div class="stars">&starf; &starf; &starf; &starf; &star;</div>
@@ -344,7 +742,7 @@
                         products. The collection feels clean, modern, and actually wearable. Picked up a pair of
                         sneakers and they've become my go-to almost every day.</div>
                 </div>
-                <div class="review">
+                <div class="review r3">
                     <div class="rf">
                         <div class="rname">&HorizontalLine; Aditi.P</div>
                         <div class="stars">&starf; &starf; &starf; &starf; &starf;</div>
@@ -353,7 +751,7 @@
                         trends or quality, but Nova somehow manages to balance both. Ordered a hoodie recently and I've
                         already been asked twice where I got it from.</div>
                 </div>
-                <div class="review">
+                <div class="review r4">
                     <div class="rf">
                         <div class="rname">&HorizontalLine; Krish.S</div>
                         <div class="stars">&starf; &starf; &starf; &starf; &star;</div>
@@ -363,7 +761,7 @@
                         sizing guide was accurate. It's clear that a lot of thought goes into selecting the products
                         featured on the platform.</div>
                 </div>
-                <div class="review">
+                <div class="review r5">
                     <div class="rf">
                         <div class="rname">&HorizontalLine; Maya.R</div>
                         <div class="stars">&starf; &starf; &starf; &starf; &starf;</div>
@@ -373,7 +771,7 @@
                         better in person. Definitely one of those purchases where you feel like you got more than what
                         you paid for.</div>
                 </div>
-                <div class="review">
+                <div class="review r6">
                     <div class="rf">
                         <div class="rname">&HorizontalLine; Ansh.S</div>
                         <div class="stars">&starf; &starf; &starf; &starf; &starf;</div>
@@ -391,7 +789,8 @@
         <div class="with">Style and Shine <br> With Nova</div>
         <div class="f-t">STREETWEAR</div>
         <div class="hrl"></div>
-        <div class="email">Get the best quality clothing for the best price. <br> By Indians, For Indians , With Indians.
+        <div class="email">Get the best quality clothing for the best price. <br> By Indians, For Indians , With
+            Indians.
             <br>
             <div class="light">Contact Us</div>
         </div>
@@ -414,151 +813,351 @@
     <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
 
     <script>
-        var typed = new Typed('#element', {
-            strings: ['SPEAKS,'],
-            typeSpeed: 70,
-            loop: true,
-            loopCount: Infinity,
-            backDelay: 2500
-        });
 
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-            slidesPerView: 5,
-            spaceBetween: 150,
-            speed: 2000, // jitna bada utni smooth movement
-
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
-
-            allowTouchMove: true,
-
-
-        });
-        const swiper2 = new Swiper('.swiper2', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-            slidesPerView: 5,
-            spaceBetween: 150,
-            speed: 2000, // jitna bada utni smooth movement
-
-
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-                reverseDirection: true
-            },
-
-            allowTouchMove: true,
-
-
-        });
-
-
-
-        document.addEventListener("DOMContentLoaded", (event) => {
-
-            gsap.registerPlugin(ScrollTrigger);
-
-            gsap.set(".q1", {
-                rotateY: 180,
-                x: -200,
-                y: -100,
-                rotation: -20,
-                scale: 0.2,
-                opacity: 0,
-                rotateZ: -180,
+        if (window.matchMedia("(min-width: 1025px)").matches) {
+            new Typed("#element", {
+                strings: ["SPEAKS"],
+                typeSpeed: 70,
+                loop: true,
+                loopCount: Infinity,
+                backDelay: 2500
             });
 
-            gsap.set(".q2", {
-                x: 200,
-                y: 100,
-                rotation: 20,
-                scale: 0.2,
-                opacity: 0,
-                rotateZ: 180,
-            });
+            document.addEventListener("DOMContentLoaded", (event) => {
 
-            gsap.to(".q1", {
-                rotateY: 180,
-                x: 100,
-                y: -30,
-                opacity: 0.8,
-                scale: 0.3,
-                duration: 0.3,
-                rotateZ: -5,
+                gsap.registerPlugin(ScrollTrigger);
 
-                scrollTrigger: {
-                    trigger: ".page3",
-                    start: "top 60%",
-                    end: "top 30%",
-                    scrub: 2
-                }
-            });
-
-            gsap.to(".q2", {
-                x: -50,
-                y: 0,
-                opacity: 0.8,
-                scale: 0.3,
-                rotateZ: 5,
-                scrollTrigger: {
-                    trigger: ".page3",
-                    start: "top 60%",
-                    end: "top 30%",
-                    scrub: 2
-                }
-
-            });
-            gsap.to(".story", {
-                opacity: 1,
-                backgroundColor: "#000",
-                scrollTrigger: {
-                    trigger: ".page3",
-                    start: "top 50%",
-                    end: "top 30%",
-                    scrub: true
-                }
-
-            })
-
-gsap.set(".footer" , {
-    opacity:0
-})
-
-            gsap.to(".footer" , {
-                opacity:1 ,
-                scrollTrigger:{
-                    trigger:".page5",
-                    start:"top 50%",
-                    end:"top 40%",
-                    scrub:true
-                }
-            })
-
-            window.addEventListener("load", () => {
-                gsap.from(".main-cont", {
+                gsap.set(".q1", {
+                    rotateY: 180,
+                    x: -200,
+                    y: -100,
+                    rotation: -20,
+                    scale: 0.2,
                     opacity: 0,
-                    y: 20,
-                    duration: 1,
-                    ease: "power2.out"
+                    rotateZ: -180,
                 });
+
+                gsap.set(".q2", {
+                    x: 200,
+                    y: 100,
+                    rotation: 20,
+                    scale: 0.2,
+                    opacity: 0,
+                    rotateZ: 180,
+                });
+
+                gsap.to(".q1", {
+                    rotateY: 180,
+                    x: 100,
+                    y: -30,
+                    opacity: 0.8,
+                    scale: 0.3,
+                    duration: 0.3,
+                    rotateZ: -5,
+
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 60%",
+                        end: "top 30%",
+                        scrub: 2
+                    }
+                });
+
+                gsap.to(".q2", {
+                    x: -50,
+                    y: 0,
+                    opacity: 0.8,
+                    scale: 0.3,
+                    rotateZ: 5,
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 60%",
+                        end: "top 30%",
+                        scrub: 2
+                    }
+
+                });
+                gsap.to(".story", {
+                    opacity: 1,
+                    backgroundColor: "#000",
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 50%",
+                        end: "top 30%",
+                        scrub: true
+                    }
+
+                })
+
+                gsap.set(".footer", {
+                    opacity: 0
+                })
+
+                gsap.to(".footer", {
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: ".page5",
+                        start: "top 50%",
+                        end: "top 40%",
+                        scrub: true
+                    }
+                })
+
+                window.addEventListener("load", () => {
+                    gsap.from(".main-cont", {
+                        opacity: 0,
+                        y: 20,
+                        duration: 1,
+                        ease: "power2.out"
+                    });
+                });
+
             });
 
+        } else if (window.matchMedia("(max-width: 780px)").matches) {
+            document.getElementById("element").innerHTML = "SPEAKS";
+
+            document.addEventListener("DOMContentLoaded", (event) => {
+
+                gsap.registerPlugin(ScrollTrigger);
+
+                gsap.set(".q1", {
+                    rotateY: 180,
+                    x: -200,
+                    y: -100,
+                    rotation: -20,
+                    scale: 0.2,
+                    opacity: 0,
+                    rotateZ: -180,
+                });
+
+                gsap.set(".q2", {
+                    x: 200,
+                    y: 100,
+                    rotation: 20,
+                    scale: 0.2,
+                    opacity: 0,
+                    rotateZ: 180,
+                });
+
+                gsap.to(".q1", {
+                    rotateY: 180,
+                    x: -100,
+                    y: -50,
+                    opacity: 0.8,
+                    scale: 0.3,
+                    duration: 0.3,
+                    rotateZ: -5,
+
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 60%",
+                        end: "top 30%",
+                        scrub: 2
+                    }
+                });
+
+                gsap.to(".q2", {
+                    x: 120,
+                    y: 0,
+                    opacity: 0.8,
+                    scale: 0.3,
+                    rotateZ: 5,
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 90%",
+                        end: "top 30%",
+                        scrub: 2
+                    }
+
+                });
+                gsap.to(".story", {
+                    opacity: 1,
+                    backgroundColor: "#000",
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 50%",
+                        end: "top 30%",
+                        scrub: true
+                    }
+
+                })
+
+                gsap.set(".footer", {
+                    opacity: 0
+                })
+
+                gsap.to(".footer", {
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: ".page5",
+                        start: "top 50%",
+                        end: "top 40%",
+                        scrub: true
+                    }
+                })
+
+                window.addEventListener("load", () => {
+                    gsap.from(".main-cont", {
+                        opacity: 0,
+                        y: 20,
+                        duration: 1,
+                        ease: "power2.out"
+                    });
+                });
+
+            });
+
+            rname = document.querySelectorAll(".rname")
+
+
+        } else if (window.matchMedia("(max-width: 430px)").matches) {
+            document.getElementById("element").innerHTML = "SPEAKS";
+
+            document.addEventListener("DOMContentLoaded", (event) => {
+
+                gsap.registerPlugin(ScrollTrigger);
+
+                gsap.set(".q1", {
+                    rotateY: 180,
+                    x: -200,
+                    y: -100,
+                    rotation: -20,
+                    scale: 0.2,
+                    opacity: 0,
+                    rotateZ: -180,
+                });
+
+                gsap.set(".q2", {
+                    x: 200,
+                    y: 100,
+                    rotation: 20,
+                    scale: 0.2,
+                    opacity: 0,
+                    rotateZ: 180,
+                });
+
+                gsap.to(".q1", {
+                    rotateY: 180,
+                    x: -100,
+                    y: -50,
+                    opacity: 0.8,
+                    scale: 0.3,
+                    duration: 0.3,
+                    rotateZ: -5,
+
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 60%",
+                        end: "top 30%",
+                        scrub: 2
+                    }
+                });
+
+                gsap.to(".q2", {
+                    x: 120,
+                    y: 0,
+                    opacity: 0.8,
+                    scale: 0.3,
+                    rotateZ: 5,
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 90%",
+                        end: "top 30%",
+                        scrub: 2
+                    }
+
+                });
+                gsap.to(".story", {
+                    opacity: 1,
+                    backgroundColor: "#000",
+                    scrollTrigger: {
+                        trigger: ".page3",
+                        start: "top 50%",
+                        end: "top 30%",
+                        scrub: true
+                    }
+
+                })
+
+                gsap.set(".footer", {
+                    opacity: 0
+                })
+
+                gsap.to(".footer", {
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: ".page5",
+                        start: "top 50%",
+                        end: "top 40%",
+                        scrub: true
+                    }
+                })
+
+                window.addEventListener("load", () => {
+                    gsap.from(".main-cont", {
+                        opacity: 0,
+                        y: 20,
+                        duration: 1,
+                        ease: "power2.out"
+                    });
+                });
+
+            });
+
+            rname = document.querySelectorAll(".rname")
+
+
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+
+            let spv = window.innerWidth <= 432 ? 2 :
+                window.innerWidth <= 780 ? 3 : 5;
+
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                slidesPerView: spv,
+                spaceBetween: 150,
+                speed: 2000,
+
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false
+                },
+
+                allowTouchMove: true
+            });
+
+            const swiper2 = new Swiper('.swiper2', {
+                direction: 'horizontal',
+                loop: true,
+                slidesPerView: spv,
+                spaceBetween: 150,
+                speed: 2000,
+
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    reverseDirection: true
+                },
+
+                allowTouchMove: true
+            });
+
+
+        })
+
+
+        const buttons = document.querySelectorAll(".movebtn");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                window.location.href = "Produt.html";
+            });
         });
-
-   const buttons = document.querySelectorAll(".movebtn");
-
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        window.location.href = "Produt.html";
-    });
-});
 
     </script>
 </body>

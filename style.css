@@ -79,11 +79,11 @@ body {
 
 @keyframes gliding {
     from {
-        right: 280px;
+        right: 18vw;
     }
 
     to {
-        right: -1160px;
+        right: -75vw;
     }
 }
 
@@ -133,7 +133,7 @@ body {
     border: 1.4px solid rgb(156, 156, 156);
 }
 
-.top div {
+.top > div {
     display: flex;
 }
 
@@ -382,7 +382,7 @@ hr {
 .item {
     overflow: hidden;
     display: flex;
-    height: 250px;
+    height: 270px;
     width: 150px;
     background-color: white;
     display: inline-block;
